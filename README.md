@@ -1,4 +1,4 @@
-# FPGA Workshop
+# FPGA Encoder
 
 ## Goal
 
@@ -11,12 +11,12 @@ Explore an FPGA-based replacement for the `LS7866C` quadrature encoder counter I
 - Estimate whether a small FPGA such as an `iCE40UP5K` is likely sufficient.
 - Produce a concrete build plan for implementation and verification.
 
-## Current Hypothesis
+## MVP Direction
 
-The likely MVP is:
+The current MVP direction is:
 
-- quadrature encoder decode in Verilog
-- position counter
+- decode quadrature A/B inputs
+- maintain a position counter
 - I2C-accessible register interface
 - implementation on a small, low-cost FPGA
 
